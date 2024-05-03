@@ -1,0 +1,138 @@
+h1 {
+  color: #fff;
+}
+
+.search-container {
+  width: 650px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+}
+
+.search-container input {
+  border: none;
+  width: 80%;
+  height: 80%;
+  outline: none;
+  font-size: 20px;
+}
+
+.search-container img {
+  width: 26px;
+  color: azure;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 250px;
+    height: 20px;
+    padding: 6px;
+  }
+  .search-container input {
+    font-size: 14px;
+  }
+
+  .search-container img {
+    width: 16px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+}
+
+.dashboard {
+  margin-top: 120px;
+  padding: 10px;
+  width: 650px;
+  height: 300px;
+  background-image: linear-gradient(to right, #d9e0e5, #9ea5df);
+  background-size: cover;
+  border-radius: 6px;
+  display: flex;
+}
+
+.weather-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.weather-icon-container h5 {
+  color: snow;
+  font-size: 20px;
+}
+.weather-icon-container img {
+  width: 80%;
+  margin-left: 16px;
+}
+.dashboard hr {
+  border: 1px solid snow;
+}
+
+.weather-info-container {
+  color: snow;
+  margin-top: 10px;
+}
+
+.weather-info-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-info-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+.dashboard {
+  width: 80%;
+  padding: 10px;
+  margin-top: 16px auto;
+  margin: 10px;
+  color: #9ea5df;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    width: 250px;
+    flex-direction: column;
+  }
+  .weather-icon-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .weather-icon-container h5 {
+    font-size: 14px;
+  }
+  .weather-icon-container img {
+    width: 30%;
+  }
+  hr {
+    border: 1px solid snow;
+    width: 100%;
+  }
+  .weather-info-container {
+    flex: row;
+  }
+  .weather-info-container h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .weather-info-icons img {
+    width: 20px;
+  }
+  .weather-info-icons div h3 {
+    font-size: 14px;
+  }
+}
